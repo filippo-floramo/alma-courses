@@ -1,0 +1,40 @@
+.list_item_container {
+   display: flex;
+   align-items: center;
+
+   &:not(:first-of-type) {
+      margin-top: 8px;
+   }
+
+   .list_item {
+      flex: 94%;
+      display: flex;
+      align-items: center;
+      min-height: 65px;
+
+      padding: 8px 16px;
+      border-radius: 12px;
+      filter: drop-shadow(3px 6px 10px rgba(0, 0, 0, 0.178));
+      background-color: white;
+
+      &:hover {
+         cursor: pointer;
+      }
+   }
+
+   .edit_icon,
+   .delete_icon {
+      flex: 3%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &:hover {
+         cursor: pointer;
+      }
+   }
+
+   .edit_icon {
+      margin-left: 8px;
+   }
+}
